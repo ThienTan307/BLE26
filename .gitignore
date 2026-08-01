@@ -11,3 +11,7 @@
 
 # Ignore CMake/Makefile generated files from language stats
 *.mk
+
+**/CMakeLists.txt
+**/Makefile
+*.mk
