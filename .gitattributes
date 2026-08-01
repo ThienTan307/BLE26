@@ -1,4 +1,4 @@
-Makefile linguist-vendored
-*.mk linguist-vendored
-CMakeLists.txt linguist-vendored
+# Quét sạch Makefile và CMake ở TẤT CẢ thư mục con
+**/Makefile linguist-vendored
+**/*.mk linguist-vendored
 **/CMakeLists.txt linguist-vendored
