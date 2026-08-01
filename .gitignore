@@ -1,0 +1,13 @@
+# Ignores build directories in subfolders
+**/.pio/
+**/.pioenvs/
+**/.piolibdeps/
+**/build/
+**/sdkconfig
+
+# Ignore Python cache in subfolders
+**/__pycache__/
+**/*.pyc
+
+# Ignore CMake/Makefile generated files from language stats
+*.mk
