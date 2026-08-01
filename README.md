@@ -48,3 +48,4 @@ The processed location and distance data are transmitted over Wi-Fi via **MQTT**
                              │    Python Server & 2D Visualizer      │
                              └────────────────────────────────────────┘
 ```
+---
