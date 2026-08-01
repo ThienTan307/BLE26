@@ -1,4 +1,3 @@
-<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/0033657e-4da1-4520-b2ae-5d8af11fd844" /># BLE-IPS
 BLE_indoor positioning system applying IOT tech 
 ## 📌 Project Overview
 
