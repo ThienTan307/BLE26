@@ -23,7 +23,7 @@ The processed location and distance data are transmitted over Wi-Fi via **MQTT**
 ### 🔄 Data Workflow
 
 ```text
-[ 3x ESP32 Beacons ] ──(BLE Signals)──> [ ESP32-S3 Gateway ] ──(MQTT / Wi-Fi)──> [ Python Server ] ──> [ 2D Visualizer ]
+[ 3x ESP32-C3 Beacons ] ──(BLE Signals)──> [ ESP32-S3 Gateway ] ──(MQTT / Wi-Fi)──> [ Python Server ] ──> [ 2D Visualizer ]
                                         └─ EMA Filtering 
                                         └─ Trilateration
 ```
