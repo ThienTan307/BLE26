@@ -31,9 +31,7 @@ def calculate_beacon_distances(target_x: float, target_y: float, beacon_position
 
 
 class PositionEngine:
-    """
-    Lớp lưu trữ thông tin cấu hình và khoảng cách hình học.
-    """
+ 
 
     def __init__(self, beacon_positions: dict = None):
         self.beacons = beacon_positions or BEACON_POSITIONS

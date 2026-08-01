@@ -24,23 +24,21 @@ def main():
     logger.info("  KHỞI CHẠY HỆ THỐNG ĐỊNH VỊ TRONG NHÀ (BLE IPS)  ")
     logger.info("==================================================")
 
-    # 1. Khởi tạo PositionEngine (Lưu trữ vị trí 3 Beacon)
+
     logger.info("Khởi tạo mô-đun quản lý không gian 2D...")
     position_engine = PositionEngine()
 
-    # 2. Khởi tạo MQTT Client Handler
     logger.info("Khởi tạo MQTT Client Handler...")
     mqtt_manager = MQTTManager(position_engine=position_engine)
 
-    # 3. Kết nối MQTT Broker trên Background Thread
+
     logger.info("Bắt đầu kết nối MQTT Broker...")
     mqtt_manager.start()
 
-    # 4. Khởi tạo Giao diện Trực quan hóa 2D (Visualizer)
+
     logger.info("Khởi tạo cửa sổ đồ họa 2D Visualizer...")
     visualizer = PositionVisualizer(data_provider_callback=mqtt_manager.get_latest_data)
 
-    # 5. Khởi chạy vòng lặp hiển thị đồ họa trên Main Thread
     try:
         logger.info("Ứng dụng đang chạy. Đóng cửa sổ đồ thị hoặc nhấn CTRL+C để thoát.")
         visualizer.start()
@@ -49,7 +47,7 @@ def main():
     except Exception as e:
         logger.error(f"Lỗi không mong muốn: {e}")
     finally:
-        # Giải phóng tài nguyên khi thoát ứng dụng
+      
         logger.info("Đang dọn dẹp tài nguyên và ngắt kết nối MQTT...")
         mqtt_manager.stop()
         logger.info("Đã thoát ứng dụng an toàn.")
