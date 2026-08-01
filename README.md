@@ -1,4 +1,4 @@
-BLE_indoor positioning system applying IOT tech 
+## Indoor Positioning System using Trilateration Algorithm and EMA Noise Filter based on ESP32 MCU
 ## 📌 Project Overview
 
 **BLE-IPS** is an IoT-integrated **Indoor Positioning System** that utilizes **Bluetooth Low Energy (BLE)**, **Exponential Moving Average (EMA)** noise filtering, and **Trilateration** algorithms to determine the real-time 2D location of a mobile unit within an indoor environment[cite: 1, 3].
