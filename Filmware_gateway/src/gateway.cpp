@@ -29,14 +29,13 @@ static bool matchMacAddress(const String &scannedMac, const String &targetMac) {
   if (scannedMac.equalsIgnoreCase(targetMac))
     return true;
 
-  // 1. Check if first 12 characters (OUI prefix) match e.g. "3c:8a:1f:d4:"
   if (scannedMac.length() >= 12 && targetMac.length() >= 12) {
     if (scannedMac.substring(0, 12).equalsIgnoreCase(
             targetMac.substring(0, 12))) {
       return true;
     }
   }
-  // 2. Check if last 5 characters match e.g. "a0:dc"
+  
   if (scannedMac.length() >= 17 && targetMac.length() >= 17) {
     if (scannedMac.substring(12, 17).equalsIgnoreCase(
             targetMac.substring(12, 17))) {
@@ -57,7 +56,7 @@ void BLEGateway::updateRSSI(String mac, int rssi) {
       rawRssiValues[i] = rssi;
       lastSeenTimes[i] = now;
 
-      // EMA Filter (alpha = 0.4)
+      
       if (filteredRssiValues[i] <= -99.0f) {
         filteredRssiValues[i] = (float)rssi;
       } else {
@@ -76,8 +75,7 @@ void BLEGateway::updateRSSI(String mac, int rssi) {
     }
   }
 
-  // Print unmatched devices if they look like ESP32 or custom beacons for
-  // debugging
+
   if (!matchedAny && (mac.startsWith("3c:8a") || mac.startsWith("ec:da") ||
                       mac.startsWith("14:63"))) {
     Serial.print("[BLE SCANNED OTHER ESP32] MAC: ");

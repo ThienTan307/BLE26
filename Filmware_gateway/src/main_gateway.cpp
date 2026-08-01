@@ -50,7 +50,7 @@ void reconnect() {
             Serial.println(" -> KET NOI MQTT THANH CONG!");
         } else {
             Serial.print(" -> That bai, rc=");
-            Serial.print(client.state()); // In mã lỗi ra để soi bệnh
+            Serial.print(client.state()); 
             Serial.println(" Thu lai sau 2 giay...");
             delay(2000);
         }
@@ -108,13 +108,13 @@ void loop() {
     
     int* rssis = myGateway.getRssiValues();
 
-    // === THÊM ĐOẠN NÀY ĐỂ LỌC EMA CHO RSSI ===
+ 
     double smooth_rssi[3];
     for (int i = 0; i < 3; i++) {
         smooth_rssi[i] = rssiFilters[i].update((double)rssis[i]);
     }
 
-    // === SỬA LẠI TRUYỀN smooth_rssi THAY VÌ rssis CŨ ===
+
     double d1 = rssiToDistance(smooth_rssi[0], myBeaconConfigs[0].A, myBeaconConfigs[0].n);
     double d2 = rssiToDistance(smooth_rssi[1], myBeaconConfigs[1].A, myBeaconConfigs[1].n);
     double d3 = rssiToDistance(smooth_rssi[2], myBeaconConfigs[2].A, myBeaconConfigs[2].n);
