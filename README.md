@@ -58,12 +58,13 @@ PIC 1: Dynamic position tracking test — Evaluating the system response and tra
 PIC 2: Real-time terminal log displaying raw vs. EMA-filtered RSSI values alongside calculated distances (d1, d2, d3) and 2D coordinates (X, Y).
 ```
 <img width="1916" height="1018" alt="image" src="https://github.com/user-attachments/assets/3039013d-7467-473c-85f7-b24c325acc53" />
----
+
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/dc54da58-d75d-415b-886c-71e354cdc4a7" />
----
+
+
 ```text
 PIC 3: Project source code structure in VS Code
 ```
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/1d4aaea7-a287-472a-8385-3c2c4dc6943c" />
----
+
 
