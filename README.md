@@ -29,7 +29,7 @@ The processed location and distance data are transmitted over Wi-Fi via **MQTT**
 ```
 ```text
   ┌─────────────────┐
-  │ 3x ESP32 Nodes  │ ─── (BLE Signal Broadcast) ───┐
+  │ 3x ESP32-C3 Nodes  │ ─── (BLE Signal Broadcast) ───┐
   └─────────────────┘                               │
                                                     ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
