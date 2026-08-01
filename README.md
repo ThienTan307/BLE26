@@ -53,5 +53,15 @@ The processed location and distance data are transmitted over Wi-Fi via **MQTT**
 PIC 1: Dynamic position tracking test — Evaluating the system response and tracking performance as the ESP32-S3 Gateway changes location in real time.
 ```
 <img width="2232" height="2564" alt="image" src="https://github.com/user-attachments/assets/4acd0490-134e-4b0b-befa-095d16261f7d" />
+---
+```
+Real-time terminal log displaying raw vs. EMA-filtered RSSI values alongside calculated distances ($d_1, d_2, d_3$) and 2D coordinates ($X, Y$).
+```
+<img width="1916" height="1018" alt="image" src="https://github.com/user-attachments/assets/4f646b59-eb42-4cd5-b015-673265547b3e" />
 
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/976617d7-7833-41f9-93d1-1cef3e56908d" />
+---
+```
+
+```
 
