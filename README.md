@@ -48,6 +48,7 @@ The processed location and distance data are transmitted over Wi-Fi via **MQTT**
                              └────────────────────────────────────────┘
 ```
 ---
+##System Demonstration Image
 
 ```
 PIC 1: Dynamic position tracking test — Evaluating the system response and tracking performance as the ESP32-S3 Gateway changes location in real time.
