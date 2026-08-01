@@ -1,4 +1,4 @@
-# BLE-IPS
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/0033657e-4da1-4520-b2ae-5d8af11fd844" /># BLE-IPS
 BLE_indoor positioning system applying IOT tech 
 ## 📌 Project Overview
 
@@ -62,7 +62,9 @@ PIC 2: Real-time terminal log displaying raw vs. EMA-filtered RSSI values alongs
 ---
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/dc54da58-d75d-415b-886c-71e354cdc4a7" />
 ---
+```text
+PIC 3: Project source code structure in VS Code
 ```
-
-```
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/1d4aaea7-a287-472a-8385-3c2c4dc6943c" />
+---
 
