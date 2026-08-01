@@ -57,7 +57,6 @@ PIC 1: Dynamic position tracking test — Evaluating the system response and tra
 ---
 ```
 PIC 2: Real-time terminal log displaying raw vs. EMA-filtered RSSI values alongside calculated distances (d1, d2, d3) and 2D coordinates (X, Y).
-
 ```
 <img width="1916" height="1018" alt="image" src="https://github.com/user-attachments/assets/3039013d-7467-473c-85f7-b24c325acc53" />
 ---
